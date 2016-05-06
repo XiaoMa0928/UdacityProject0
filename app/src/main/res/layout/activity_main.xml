@@ -1,79 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginLeft="@dimen/activity_vertical_margin"
-    android:layout_marginRight="@dimen/activity_vertical_margin"
-    android:padding="@dimen/activity_vertical_margin">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/activity_button_margin"
-        android:text="My Nanodegree Apps"
-        android:textSize="26sp" />
-
-    <Button
-        android:id="@+id/button1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_button_margin"
-        android:background="@color/colorButton"
-        android:text="SPOTIFY STREAMER"
-        android:textColor="@color/colorButtonText"
-        android:textSize="20sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_button_margin"
-        android:background="@color/colorButton"
-        android:text="SCORES APP"
-        android:textColor="@color/colorButtonText"
-        android:textSize="20sp" />
+        >
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_button_margin"
-        android:background="@color/colorButton"
-        android:text="LIBRARY APP"
-        android:textColor="@color/colorButtonText"
-        android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_button_margin"
+            android:text="@string/my_nanodegree_apps"
+            android:textSize="26sp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_button_margin"
-        android:background="@color/colorButton"
-        android:text="BUILD IT BIGGER"
-        android:textColor="@color/colorButtonText"
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/button1"
+            style="@style/ButtomStyle"
+            android:text="@string/SPOTIFY_STREAMER" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_button_margin"
-        android:background="@color/colorButton"
-        android:text="BACON READER"
-        android:textColor="@color/colorButtonText"
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/ButtomStyle"
+            android:text="@string/SCORES_APP" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_button_margin"
-        android:background="@color/colorAccent"
-        android:text="CAPSTONE:MY OWN APP"
-        android:textColor="@color/colorButtonText"
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/button3"
+            style="@style/ButtomStyle"
+            android:text="@string/LIBRARY_APP" />
 
+        <Button
+            android:id="@+id/button4"
+            style="@style/ButtomStyle"
+            android:text="@string/BUILD_IT_BIGGER" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button5"
+            style="@style/ButtomStyle"
+            android:text="@string/BACON_READER" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/ButtomStyle"
+            android:background="@color/colorAccent"
+            android:text="@string/CAPSTONE" />
+
+    </LinearLayout>
+
+</ScrollView>
